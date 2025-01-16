@@ -15,7 +15,7 @@ from db import processar_e_salvar
 
 
 def acessar_site():
-    # Caminho correto para o ChromeDriver
+    # Caminho para o ChromeDriver
     chromedriver_path = r'C:\Users\uriel\Documents\chromedriver-win64\chromedriver-win64\chromedriver.exe'
 
     # Configurando o serviço do ChromeDriver
