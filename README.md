@@ -94,13 +94,13 @@ A rotina de atualização dos dados, desde o processo de extração, tratamento,
 
 O fluxo ocorre executando a partir do **Scheduler Windows** um arquivo **.py** principal, sendo eles:
 - `main.py`
-- `coleta.py`
-- `processamento.py`
-- `db.py`
-- `mensagem_telegram.py`
-- `mensagem_whatsapp.py`
-- `enviar_email.py`
-- `dash.py`
+    - `coleta.py`
+    - `processamento.py`
+    - `db.py`
+    - `mensagem_telegram.py`
+    - `mensagem_whatsapp.py`
+    - `enviar_email.py`
+    - `dash.py`
 
 O fluxo inteiro de atualização, desde o processo de extração, processamento, tratamento, carga e envio de notificações, totalizou **0,88 segundos**.
 
