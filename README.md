@@ -6,6 +6,8 @@
 
 ---
 
+![Imagem do Projeto](C:\Users\uriel\OneDrive\Documentos\GitHub\projetos\imoveis-leilao\imagem_projeto.png)
+
 ## Visão Geral
 
 Este projeto tem o objetivo de desenvolver um fluxo de dados automatizado para coletar, processar, armazenar, notificar e visualizar, de forma inteligente, informações sobre imóveis em leilão da Caixa Econômica Federal. O projeto visa facilitar a análise e o acompanhamento de oportunidades de investimento em uma variedade de imóveis espalhados por todo o Brasil.
