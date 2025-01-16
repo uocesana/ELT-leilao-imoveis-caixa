@@ -67,6 +67,8 @@ Este projeto tem o objetivo de desenvolver um fluxo de dados automatizado para c
 - Um Relatório Completo desenvolvido utilizando **Looker Studio** (Google) é disponibilizado ao usuário.
 - A plataforma torna a interação mais flexível para usuários com nenhum conhecimento de código, permitindo a criação de visuais de acordo com suas necessidades. O relatório consome os dados diretamente do banco de dados MySQL.
 
+[Acesse aqui o Relatório feito no Looker](https://lookerstudio.google.com/reporting/c072af31-c110-481c-9576-0b2c462d3a10)
+
 ![Relatório no Looker Studio](imagens/imagem_looker_studio.png)
 
 ---
@@ -116,7 +118,7 @@ O fluxo inteiro de atualização, desde o processo de extração, processamento,
 
 ## Link do Relatório Looker Studio
 
-[Relatório Imóveis de Leilão - Looker Studio](https://lookerstudio.google.com/)
+[Relatório Imóveis de Leilão - Looker Studio](https://lookerstudio.google.com/reporting/c072af31-c110-481c-9576-0b2c462d3a10)
 
 ---
 
