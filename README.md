@@ -6,7 +6,7 @@
 
 ---
 
-![Imagem do Projeto](C:\Users\uriel\OneDrive\Documentos\GitHub\projetos\imoveis-leilao\imagem_projeto.png)
+![Imagem do Projeto](imagem_projeto.png)
 
 ## Visão Geral
 
