@@ -104,7 +104,7 @@ O fluxo ocorre executando a partir do **Scheduler Windows** um arquivo **.py** p
 
 O fluxo inteiro de atualização, desde o processo de extração, processamento, tratamento, carga e envio de notificações, totalizou **0,88 segundos**.
 
-![Tempo de Processamento](imagens\tempo_de_processo.png)
+![Tempo de Processamento](imagens/tempo_de_processo.png)
 
 ---
 
