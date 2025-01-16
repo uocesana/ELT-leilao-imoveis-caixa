@@ -6,7 +6,7 @@
 
 ---
 
-![Imagem do Projeto](imagem_projeto.png)
+![Imagem do Projeto](imagens\imagem_projeto.png)
 
 ## Visão Geral
 
