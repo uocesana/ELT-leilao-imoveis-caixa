@@ -18,18 +18,29 @@ Este projeto tem o objetivo de desenvolver um fluxo de dados automatizado para c
 
 ### 1. Fonte de Dados (Extração)
 - Os dados são extraídos da página oficial da Caixa Econômica Federal, contendo informações sobre imóveis em leilão.
+
+![Site Caixa](imagens\imagem_lista_caixa.png)
+
 - A extração é realizada via **Script Python** que realiza o download dos dados em formato **CSV** e armazena em diretório local.
+
+![Arquivo Extraído](imagens\imagem_csv.png)
 
 ### 2. Transformação e Processamento
 - Após a coleta, os dados são processados utilizando **Python** para:
   - Remover campos irrelevantes;
   - Adicionar campo de **Data de Processamento**;
+
+![Arquivo Processado](imagens\imagem_xlsx.png)
+
   - Converter o arquivo para formato **XLSX**.
 - Realizar filtros, como imóveis com valor de até **R$ 140.000,00** e localizados em **Minas Gerais**.
 - Um arquivo com os filtros de interesse é gerado para uso posterior em notificações de oportunidade via **Telegram**, **WhatsApp** e **E-mail**.
 
 ### 3. Carga e Armazenamento (MySQL)
 - Os dados processados são carregados em um banco de dados **MySQL**, permitindo o armazenamento de dados históricos e uma consulta estruturada.
+
+![Consulta no Banco de Dados](imagens\imagem_dbeaver.png)
+
 - O banco de dados está hospedado em uma instância **EC2** da **AWS**.
 
 ### 4. Notificação Automática
@@ -50,9 +61,13 @@ Este projeto tem o objetivo de desenvolver um fluxo de dados automatizado para c
   - **Tabelas**;
   - **Mapa de Bolhas**.
 
+![Painel - Streamlit](imagens\imagem_streamlit.png)
+
 #### Visualização de Dados usando **Looker Studio**
 - Um Relatório Completo desenvolvido utilizando **Looker Studio** (Google) é disponibilizado ao usuário.
 - A plataforma torna a interação mais flexível para usuários com nenhum conhecimento de código, permitindo a criação de visuais de acordo com suas necessidades. O relatório consome os dados diretamente do banco de dados MySQL.
+
+![Relatório no Looker Studio](imagens\imagem_looker_studio.png)
 
 ---
 
@@ -88,6 +103,8 @@ O fluxo ocorre executando a partir do **Scheduler Windows** um arquivo **.py** p
 - `dash.py`
 
 O fluxo inteiro de atualização, desde o processo de extração, processamento, tratamento, carga e envio de notificações, totalizou **0,88 segundos**.
+
+![Tempo de Processamento](imagens\tempo_de_processo.png)
 
 ---
 

@@ -79,3 +79,4 @@ def filtrar_e_enviar_excel(arquivo_entrada, estado, valor_maximo):
 if __name__ == "__main__":
     arquivo_processado = r'C:\Users\uriel\Downloads\Lista_imoveis_tratada_novo.xlsx'
     filtrar_e_enviar_excel(arquivo_processado, 'MG', 140000)
+    

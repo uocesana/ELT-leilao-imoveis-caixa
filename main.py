@@ -3,6 +3,7 @@ from coleta import acessar_site
 from processamento import tratar_e_carregar
 from db import processar_e_salvar
 from mensagem_telegram import filtrar_e_enviar_excel
+from enviar_email import filtrar_e_enviar_excel
 import os
 import time
 
@@ -10,7 +11,7 @@ import time
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 
-def main():
+async def main():  # Agora a função é assíncrona
     try:
         tempo_inicio_total = time.time()
 
@@ -46,10 +47,15 @@ def main():
 
         print("Enviando dados via Telegram...")
         tempo_inicio_etapa = time.time()
-        asyncio.run(filtrar_e_enviar_excel(
-            arquivo_processado, estado, valor_maximo))
+        await filtrar_e_enviar_excel(arquivo_processado, estado, valor_maximo)
         tempo_etapa = (time.time() - tempo_inicio_etapa) / 60
         print(f"Tempo para envio no Telegram: {tempo_etapa:.2f} segundos\n")
+
+        # Passo 5: Enviar e-mail (síncrono)
+        print("Enviando dados via e-mail...")
+        tempo_inicio_etapa = time.time()
+        filtrar_e_enviar_excel(arquivo_processado, estado, valor_maximo)
+        print(f"Tempo para envio no e-mail: {tempo_etapa:.2f} segundos\n")
 
         # Tempo total
         tempo_total = (time.time() - tempo_inicio_total) / 60
@@ -59,5 +65,6 @@ def main():
         print(f"Ocorreu um erro no processo: {e}")
 
 
+# Chamando o asyncio corretamente
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
