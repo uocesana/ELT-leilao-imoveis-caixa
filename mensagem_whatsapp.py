@@ -3,6 +3,7 @@ import pywhatkit as kit
 from pathlib import Path
 import time
 import pyautogui
+from credenciais import contato
 
 
 def filtrar_e_enviar_arquivo(arquivo_entrada, estado, valor_maximo, numeros):
@@ -56,8 +57,7 @@ def filtrar_e_enviar_arquivo(arquivo_entrada, estado, valor_maximo, numeros):
 
 
 if __name__ == "__main__":
-    # numeros = ['5573981635241']
-    numeros = ['5573999233407']
+    numeros = contato
     arquivo_processado = Path(
         r'C:\Users\uriel\Downloads\Lista_imoveis_tratada_novo.xlsx')
     filtrar_e_enviar_arquivo(arquivo_processado, 'MG', 140000, numeros)
