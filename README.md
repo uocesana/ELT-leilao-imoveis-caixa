@@ -110,12 +110,6 @@ O fluxo inteiro de atualização, desde o processo de extração, processamento,
 
 ---
 
-## Repositório do GitHub
-
-[Link para o repositório GitHub](https://github.com/uocesana/ELT-leilao-imoveis-caixa)
-
----
-
 ## Link do Relatório Looker Studio
 
 [Relatório Imóveis de Leilão - Looker Studio](https://lookerstudio.google.com/reporting/c072af31-c110-481c-9576-0b2c462d3a10)
