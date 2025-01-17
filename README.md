@@ -122,4 +122,3 @@ O fluxo inteiro de atualização, desde o processo de extração, processamento,
 
 ---
 
-
